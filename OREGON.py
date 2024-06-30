@@ -1,11 +1,8 @@
-from goto import with_goto
 import random
 import time
+from goto import with_goto
 
-
-
-
-
+'''
 
 
 def death():
@@ -35,6 +32,7 @@ def death():
     print()
     print("".ljust(17) + "THE OREGON CITY CHAMBER OF COMMERCE")
     exit()
+
 
 
 
@@ -99,7 +97,7 @@ print("FASTER YOU'LL HAVE TO BE WITH YOUR GUN TO BE SUCCESSFUL.")
 
 while True:
     try:
-        D9 = input()
+        D9=input()
         if int(D9)<=5:
             D9=0
             break
@@ -122,7 +120,7 @@ while T<0:
     print("HOW MUCH DO YOU WANT TO SPEND ON YOUR OXEN TEAM")
     while True:
         try:
-            A = int(input())
+            A=int(input())
             while A<200:
                 print("NOT ENOUGH")
                 A=int(input())
@@ -164,45 +162,110 @@ while T<0:
                 break
         except:
             pass
-    T = 700-A-F-B-C-M1
+    T=700-A-F-B-C-M1
     if T<0:
         print("YOU OVERSPENT--YOU ONLY HAD $700 TO SPEND.  BUY AGAIN")
 
 
-B=50*B
+B=B*50
 print("AFTER ALL YOUR PURCHASES. YOU NOW HAVE "+str(T)+" DOLLARS LEFT")
 print()
 print("MONDAY MARCH 29 1847")
 print()
+'''
 
 
 
-goto _1750
+@with_goto
+def range(start, stop):
+    i = start
+    result = []
+
+    label .begin
+    if i == stop:
+        goto .end
+
+    result.append(i)
+    i += 1
+    goto .begin
+
+    label .end
+    return result
+
+range(1,10)
+
+    
+'''
 if M>=2040:
-    goto _5430
+    goto .five430
 
 #***SETTING DATE***
 D3=D3+1
 print()
 print("MONDAY")
 if D3>10:
-    goto _1300
+    goto .one300
 
-if D3 = 1:
-    goto _1310
-if D3 = 2:
-    goto _1330
-if D3 = 3:
-    goto _1350
-if D3 = 4:
-    goto _1370
-if D3 = 5:
-    goto _1390
-if D3 = 1:
-    goto _1310
+if D3==1:
+    goto .one310
+if D3==2:
+    goto .one330
+if D3==3:
+    goto .one350
+if D3==4:
+    goto .one370
+if D3==5:
+    goto .one390
+if D3==6:
+    goto .one410
+if D3==7:
+    goto .one430
+if D3==8:
+    goto.one450
+if D3==9:
+    goto .one410
+if D3==10:
+    goto .one410
+    
+label .one300
 
+if D3-10==1:
+    goto .one510
+if D3-10==2:
+    goto .one530
+if D3-10==3:
+    goto .one550
+if D3-10==4:
+    goto .one570
+if D3-10==5:
+    goto .one590
+if D3-10==6:
+    goto .one610
+if D3-10==7:
+    goto .one630
+if D3-10==8:
+    goto .one650
+if D3-10==9:
+    goto .one670
+if D3-10==10:
+    goto .one690
 
+label .one310
+print("APRIL 12")
+goto .one720
 
+label .one330
+print("APRIL 26")
+goto .one720
 
+label .one350
+print("MAY 10")
+goto .one720
 
+label .one370
+print("MAY 24")
+goto .one720
 
+label .begin
+print()
+'''
