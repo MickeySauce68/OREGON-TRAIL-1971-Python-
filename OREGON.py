@@ -442,7 +442,57 @@ def main():
     if X==3:
         goto .two720 #2270
     
+    #***STOPPING AT FORT***
+    label .two290
+    print("ENTER WHAT YOU WISH TO SPEND ON THE FOLLOWING")
+    print("FOOD")
     
+    def two330(): # Function for line 2310
+        P=input()
+        if  P<0:
+            goto .two400
+        T=T-P
+
+        if T>=0:
+            goto .two400
+
+        print("YOU  DON'T HAVE THAT MUCH--KEEP YOUR SPENDING DOWN")
+        print("YOU MISS YOUR CHANCE TO SPEND ON THAT ITEM") #2375
+
+        T=T+P
+        P=0
+
+        label .two400
+    
+    two330() #This is at line 2310
+
+    F=F+(2/3)*P #2410
+
+    print("AMMUNITION")
+
+    two330()
+
+    B=int(B+(2/3)*P*P*50)
+    print("CLOTHING")
+
+    two330()
+
+    C=C+(2/3)*P
+    print("MISCELLANEOUS SUPPLIES")
+
+    two330()
+
+    M1=M1+(2/3)*P
+    M=M-45
+
+    goto .two720
+
+    #***HUNTING*** ########### LINE 2530
+    label .two540
+    if B>39:
+        goto .two570
+
+    print("TOUGH---YOU NEED MORE BULLETS TO GO HUNTING") ###LINE 2550
     
 main()
 
