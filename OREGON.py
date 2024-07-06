@@ -389,7 +389,9 @@ def main():
         goto .two170
     
     X1=X1*(-1)
-    
+
+
+    label .two080
     print("DO YOU WANT TO (1) STOP AT THE NEXT FORT, (2) HUNT, ")
     print("OR (3) CONTINUE")
     X=input() #2100
@@ -493,6 +495,23 @@ def main():
         goto .two570
 
     print("TOUGH---YOU NEED MORE BULLETS TO GO HUNTING") ###LINE 2550
+
+    goto .two080 #######MAY NEED TO CHANGE :( ###############################**********************************************<-----
+
+    M=M-45
+
+    def six140(): ######### -----------> START <-------------
+         rand = random.randint(1,4)
+        
+
+    if B1<=1:
+        goto .two660
+
+
+
+
+
+
     
 main()
 
