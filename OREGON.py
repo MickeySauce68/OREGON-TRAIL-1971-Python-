@@ -496,6 +496,8 @@ def main():
 
     #***HUNTING*** ########### LINE 2530
     label .two540
+    #START ------ Type Line two550
+    #IGNORE-------------------------------------------------
     def get_user_input(sound, input_ready):
         """Gets user input while the timer is running."""
         pressed = input("TYPE " + sound + ": ")
@@ -507,7 +509,7 @@ def main():
             print("DONE")
         else:
             print("WRONG! The correct sound was: " + sound)
-
+    #-------------------------------------------------------
     def six140():
         """Main game function."""
         rand = random.randint(0, 3)
