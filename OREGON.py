@@ -1,4 +1,4 @@
-from goto import with_goto
+from goto import goto, label
 import random
 import time
 import random
@@ -8,7 +8,7 @@ global pressed
 
 
 
-@with_goto
+
 def main():
     
     def death():
@@ -495,8 +495,16 @@ def main():
     goto .two720
 
     #***HUNTING*** ########### LINE 2530
+    #START ------ Type Line two540
     label .two540
-    #START ------ Type Line two550
+    if B>39:
+        goto .two570
+    print("TOUGH---YOU NEED MORE BULLETS TO GO HUNTING")
+
+    goto .two080
+
+    M=M-45
+
     #IGNORE-------------------------------------------------
     def get_user_input(sound, input_ready):
         """Gets user input while the timer is running."""
@@ -531,8 +539,33 @@ def main():
         # Check the input after both threads are done
         check(sound, input_ready)
 
-    six140()
+    six140() #LINE 3120
 
+    if pressed and sound == pressed[0]:
+        goto .two660
+    else:
+        goto .two710
+    
+    label .two660
+    print("RIGHT BETWEEN THE EYES---YOU GOT A BIG ONE!!!!")
+    print("FULL BELLIES TONIGHT!")
+    goto .two720
+
+    label .two710
+    print("YOU MISSED---AND YOUR DINNER GOT AWAY.....")
+
+    label .two720
+    if F>=13:
+        goto .two750
+    goto .five060
+    
+    ###EATING###
+
+    label .two750
+    print("DO YOU WANT TO EAT (1) POORLY (2) MODERATELY")
+    print("OR (3) WELL")
+
+    E = input() #LINE 2770 - START HERE!!!
     
         
 
