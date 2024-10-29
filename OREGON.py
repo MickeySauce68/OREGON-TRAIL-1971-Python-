@@ -567,6 +567,11 @@ def main():
 
     E = input() #LINE 2770 - START HERE!!!
     
+    if E > 3: 
+        goto .two750
+    if E < 1:
+        goto .two750
+
         
 
     
@@ -575,7 +580,7 @@ def main():
 
 
 
-    
+
 
 
 
