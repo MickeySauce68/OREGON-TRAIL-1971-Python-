@@ -590,11 +590,36 @@ def main():
 
     ###RIDERS ATTACK### 
     
-    #LINE 2890 - START HERE!!!
+    #START HERE!!!
+    if (round(-1 ) * 10 > ((M / 100 - 4) 
+    ** 2 + 72) / ((M / 100 - 4) ** 2 + 12) - 1): #LINE 2890 - START HERE!!! 
+        goto .three550
     
-    
+    print("RIDERS AHEAD. THEY ")
 
-        
+    S5 = 0
+
+    if round(-1) < .8:
+        goto .two950
+    
+    print("DON'T ")
+
+    S5 = 1
+
+    label .two950
+    print("LOOK HOSTILE")
+    print("TACTICS")
+    print("(1) RUN (2) ATTACK (3) CONTINUE (4) CIRCLE WAGONS")
+
+    if round(1) > .2:
+        goto .three000
+    
+    S5 = 1 - S5
+
+    label .three000
+    T1 = input()
+
+    
 
     
 

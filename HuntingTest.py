@@ -1,3 +1,4 @@
+'''
 import random
 import threading
 
@@ -39,3 +40,4 @@ def six140():
     check(sound, input_ready)
 
 six140() #LINE 3120
+'''
