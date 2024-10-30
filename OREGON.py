@@ -455,6 +455,7 @@ def main():
     print("FOOD")
     
     def two330(): # Function for line 2310
+        global P
         P=input()
         if  P<0:
             goto .two400
@@ -589,8 +590,6 @@ def main():
     C1 = 0
 
     ###RIDERS ATTACK### 
-    
-    #START HERE!!!
     if (round(-1 ) * 10 > ((M / 100 - 4) 
     ** 2 + 72) / ((M / 100 - 4) ** 2 + 12) - 1): #LINE 2890 - START HERE!!! 
         goto .three550
@@ -609,6 +608,8 @@ def main():
     label .two950
     print("LOOK HOSTILE")
     print("TACTICS")
+
+    label .two970
     print("(1) RUN (2) ATTACK (3) CONTINUE (4) CIRCLE WAGONS")
 
     if round(1) > .2:
@@ -619,9 +620,35 @@ def main():
     label .three000
     T1 = input()
 
-    
+    if T1 < 1:
+        goto .two970
 
+    if T1 > 4:
+        goto .two970
+
+    T1 = int(T1)
+
+    if S5 == 1:
+        goto .three330
+
+    if T1 > 1:
+        goto .three110
+
+    M = M + 20
+
+    M1 = M1 - 15 
     
+    B = B - 150
+
+    A = A - 40
+
+    goto .three470 # LINE 3100
+
+    label .three110
+    if T1 > 2:
+        goto .three240
+
+    goto .six140 #START HERE --- LINE 3120
 
 
 
