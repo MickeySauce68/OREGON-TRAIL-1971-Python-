@@ -565,12 +565,34 @@ def main():
     print("DO YOU WANT TO EAT (1) POORLY (2) MODERATELY")
     print("OR (3) WELL")
 
-    E = input() #LINE 2770 - START HERE!!!
+    E = input() 
     
     if E > 3: 
         goto .two750
     if E < 1:
         goto .two750
+    
+    int(E)
+
+    F = F - 8 - 5 * E
+
+    if F >= 0:
+        goto .two860
+    
+    print("YOU CAN'T EAT THAT WELL")
+    goto .two750
+    
+    label .two860
+    M = M + 200 + (A - 220) / 5 + 10 * round(-1)
+    
+    L1 = 0
+    C1 = 0
+
+    ###RIDERS ATTACK### 
+    
+    #LINE 2890 - START HERE!!!
+    
+    
 
         
 
