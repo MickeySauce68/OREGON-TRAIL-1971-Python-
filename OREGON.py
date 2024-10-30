@@ -527,6 +527,7 @@ def main():
 
 
         # Create a list to store user input
+        global input_ready
         input_ready = []
 
 
@@ -648,14 +649,29 @@ def main():
     if T1 > 2:
         goto .three240
 
-    goto .six140 #START HERE --- LINE 3120
+    six140()#START HERE --- LINE 3120
+    
+    '''
+    LINE 3130 - 3230
+    '''
+    ###Killed ???###########################
+    if pressed and sound != pressed[0]:
+        print("LOUSY SHOT---YOU GOT KNIFED") 
+        K8 = 1
+        print("YOU HAVE TO SEE OL' DOC BLANCHARD")
+    ########################################
 
 
-
-
-
-
-
+    #This code decides whether the riders where
+    #friendly, hostile, or you drove them off.
+    path = random.randint(0, 1)
+    if path == 0:
+        print("NICE SHOOTING---YOU DROVE THEM OFF")
+        goto .three470
+    else:
+        print("KINDA SLOW WITH YOUR COLT .45")
+        goto .three470
+    
 
 
 
