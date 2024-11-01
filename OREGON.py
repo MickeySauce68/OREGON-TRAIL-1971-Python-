@@ -672,11 +672,60 @@ def main():
         print("KINDA SLOW WITH YOUR COLT .45")
         goto .three470
     
+    if T1 > 3:
+        goto .three290
+    
+    if round(-1) > .8:
+        goto .three450
+    
+    B = B - 150
 
+    M1 = M1 - 15
 
+    goto .three470
 
+    label .three290
+    six140()
 
+    if T1 > 1:
+        goto .three370
+    
+    M = M + 15
 
+    A = A - 10
+
+    goto .three470
+
+    label .three370
+    if T1 > 2:
+        goto .three410
+
+    M = M - 5
+
+    B = B - 100
+    
+    goto .three470
+
+    if T1 > 3:
+        goto .three430
+
+    goto .three470
+
+    label .three430
+    M = M - 20
+
+    goto .three470 # LINE 3440
+
+    print("THEY DID NOT ATTACK")
+
+    goto .three550
+
+    label .three470
+    if S5 == 0:
+        goto .three500
+
+    print("RIDERS WERE FRIENDLY, BUT CHECK FOR POSSIBLE LOSSES")
+    
     
 main()
 
