@@ -726,6 +726,41 @@ def main():
 
     print("RIDERS WERE FRIENDLY, BUT CHECK FOR POSSIBLE LOSSES")
     
+    goto .three550
+
+    print("RIDERS WERE HOSTILE--CHECK FOR POSSIBLE LOSSES")
+
+    if B >= 0:
+        goto .three550
+
+    print("YOU RAN OUT OF BULLETS AND GOT MASSACRED BY THE RIDERS")
+
+    goto .five170
+
+    ###SELECTION OF EVENTS###
+
+    label .three550
+    D1 = 0
+
+    R1 = 100*round(-1)
     
+    label .three580
+
+    D1 = D1 + 1
+
+    if D1 == 16:
+        goto .four670
+
+    if R1 > D:
+        goto .three580
+
+    D = [6, 11, 13, 15, 17, 22, 32, 35, 37, 42, 44, 54, 64, 69, 95]
+
+    if D1 > 10: 
+        goto .three650
+    #STOP --- LINE 3630
+
+
+
 main()
 
