@@ -758,9 +758,58 @@ def main():
 
     if D1 > 10: 
         goto .three650
-    #STOP --- LINE 3630
+
+    if D1==1:
+        goto .three660
+    if D1==2:
+        goto .three700
+    if D1==3:
+        goto .three740
+    if D1==4:
+        goto .three790
+    if D1==5:
+        goto .three820
+    if D1==6:
+        goto .three850
+    if D1==7:
+        goto .three880
+    if D1==8:
+        goto .three960
+    if D1==9:
+        goto .four130
+    if D1==10:
+        goto .four190
+
+    if ((D1-10)==1):
+        goto .four220
+    if ((D1-10)==2):
+        goto .four290
+    if ((D1-10)==3):
+        goto .four340
+    if ((D1-10)==4):
+        goto .four560
+    if ((D1-10)==5):
+        goto .four610
+    if ((D1-10)==6):
+        goto .four670
+    
+    print("WAGON BREAKS DOWN--LOSE TIME AND SUPPLIES FIXING IT")
+
+    M=M-15-5*round(-1)
+    M1=M1-8
+
+    goto .four710
+    print("OX INJURES LEG---SLOWS YOU DOWN REST OF TRIP")
+
+    M=M-25
+    A=A-20
+
+    goto .four710
+    print("BAD LUCK---YOUR DAUGHTER BROKE HER ARM")
 
 
+
+    #STOP --- LINE 3740
 
 main()
 
