@@ -803,13 +803,59 @@ def main():
 
     M=M-25
     A=A-20
-
     goto .four710
+
     print("BAD LUCK---YOUR DAUGHTER BROKE HER ARM")
+    print("YOU HAD TO STOP AND USE SUPPLIES TO MAKE A SLING")
+
+    M=M-5-4*round(-1)
+    M1=M1-2-3*round(-1)
+    goto .four710
+
+    print("OX WANDERS OFF---SPEND TIME LOOKING FOR IT")
+    M=M-17
+    goto .four710
+
+    print("YOUR SON GETS LOST---SPEND HALF THE DAY LOOKING FOR HIM")
+    M=M-10
+    goto .four710
+
+    print("UNSAFE WATER--LOSE TIME LOOKING FOR CLEAN SPRING")
+    M=M-10*round(-1)-2
+    goto .four710
+    
+    if M>950:
+        goto .four490
+
+    print("HEAVY RAINS---TIME AND SUPPLIES LOST")
+
+    F=F-10
+    B=B-500
+    M1=M1-15
+    M=M-10*round(-1)-5
+    goto .four710
+    print("BANDITS ATTACK")
+
+    six140()
+    
+    B=B-20
+
+    if(B >= 0):
+        goto .four030
+    
+    print("YOU RAN OUT OF BULLETS---THEY GET LOTS OF CASH") #LINE 4000
+
+
+
+
+
+
 
 
 
     #STOP --- LINE 3740
+
+
 
 main()
 
